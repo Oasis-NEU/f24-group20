@@ -1,12 +1,11 @@
 import React from "react";
+import Navigation from "./navigation";
 
 const Courses = () => {
     return(
-    <>
-    <p>
-        hi
-    </p>
-    </>
+    <div>
+    <Navigation/>
+    </div>
     );
 }
 export default Courses

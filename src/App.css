@@ -40,11 +40,12 @@
 }
 
 #goButton{
-  height: 50px;
-  width: 50px;
-  margin-bottom: 2rem;
+  padding: 1%;
+  margin-bottom: 1rem;
   background-color: red;
   text-align: center;
+  color: black;
+  
 }
 
 .logo {

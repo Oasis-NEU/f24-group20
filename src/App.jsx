@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Navigation from './assets/navigation'
+import { Link } from 'react-router-dom'
 
 function textInput({crn}){
   let x = {crn};
@@ -28,8 +29,7 @@ function App() {
         </h2>
       <div className="card">
        <input type="text" className="textbox"></input>
-       <button id = "goButton">GO</button>
-       <Navigation/>
+       <Link id = "goButton" to="/Courses">GO</Link>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
