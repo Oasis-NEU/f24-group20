@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Navigation from './assets/navigation'
+import oasisbg from "/oasisbg.png"
 
 function textInput({crn}){
   let x = {crn};
@@ -13,13 +14,9 @@ function App() {
 
   return (
     <>
-    <head>
-      <title>
-        PlaNUr
-      </title>
-    </head>
+    
       <div className="title">
-      <h1 id = "title">PlaNUr</h1>  
+      <img src={oasisbg} alt="plaNUr Image" />  
       </div>
       <div className="textBody">
         <h2>
