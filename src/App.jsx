@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
 import Navigation from './assets/navigation'
+import { Link } from 'react-router-dom'
+import oasisbg from "/oasisbg.png"
 
 function textInput({crn}){
   let x = {crn};
@@ -13,13 +15,9 @@ function App() {
 
   return (
     <>
-    <head>
-      <title>
-        PlaNUr
-      </title>
-    </head>
+    
       <div className="title">
-      <h1 id = "title">PlaNUr</h1>  
+      <img src={oasisbg} alt="plaNUr Image" />  
       </div>
       <div className="textBody">
         <h2>
@@ -28,8 +26,7 @@ function App() {
         </h2>
       <div className="card">
        <input type="text" className="textbox"></input>
-       <button id = "goButton">GO</button>
-       <Navigation/>
+       <Link id = "goButton" to="/Courses">GO</Link>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
