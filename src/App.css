@@ -3,12 +3,8 @@
   position: relative;
 }
 
-#title {
-  color: white;
-  text-align: center;
-  font-size: 100px;
-  position: sticky;
-  background-color: red;
+body {
+  background-color: #d3d3d3a6;
 }
 
 .textBody{
@@ -33,15 +29,13 @@
 }
 
 #goButton{
-  padding: 1%;
-  margin-bottom: 1rem;
-  background-color: red;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  background-color: #d3d3d3;
+  padding: 25px;
   text-align: center;
-  color: black;
-  
+  color: red;
+  border-radius: 10px;
+  margin: 10px;
+  border-color: black;
 }
 
 .logo {
@@ -58,10 +52,11 @@
 }
 
 .title {
-  background-color: #d3d3d36d;
-  margin-top: 55px;
-  margin-bottom: 55px;
-
+  background-color:  #d3d3d3;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @keyframes logo-spin {
