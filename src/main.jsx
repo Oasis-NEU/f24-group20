@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import Courses from './assets/Courses.jsx'
+import Courses from './Courses.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
