@@ -52,11 +52,7 @@ body {
 }
 
 .title {
-  background-color:  #d3d3d3;
-  margin-top: 50px;
   margin-bottom: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 @keyframes logo-spin {
