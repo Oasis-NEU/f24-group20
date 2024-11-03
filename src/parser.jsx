@@ -20,10 +20,18 @@ const CourseInfoLookup = () => {
         const crnToFind = String(crnInput); // Convert input to a string
         const sections = classData.neu.sections.find(sections => sections.crn === crnToFind);
         
+<<<<<<< Updated upstream
         const profToFind = sections.profs[0];
         const profData = professorData.main.find(profData => profData.name == profToFind);
 
         if (sections && sections.meetings && sections.profs && sections.subject && sections.classId) { 
+=======
+        
+
+        if (sections && sections.meetings && sections.profs && sections.subject && sections.classId) { 
+            const profToFind = sections.profs[0];
+            const profData = professorData.main.find(profData => profData.name == profToFind);
+>>>>>>> Stashed changes
             setLocation(sections.meetings[0].where);
             setProfessor(sections.profs[0]);
             setEmail(profData.email);
