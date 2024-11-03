@@ -45,6 +45,42 @@
   margin-bottom: 2rem;
   background-color: red;
   text-align: center;
+  position: relative;
+}
+
+body {
+  background-color: #d3d3d3a6;
+}
+
+.textBody{
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+.textbox{
+  height: 50px;
+  width: 30%;
+  text-align: center;
+  place-items: center;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  border-width: 5px;
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+
+#goButton{
+  background-color: #d3d3d3;
+  padding: 25px;
+  text-align: center;
+  color: red;
+  border-radius: 10px;
+  margin: 10px;
+  border-color: black;
 }
 
 .logo {
@@ -58,6 +94,14 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.title {
+  background-color:  #d3d3d3;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @keyframes logo-spin {
