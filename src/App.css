@@ -8,6 +8,8 @@ body {
   background-color: #d3d3d3a6;
 }
 
+
+
 .classOneInfo {
   margin-top: 50px;
   background-color: #d3d3d3;;
@@ -30,6 +32,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-image: linear-gradient(180deg, #e2e2e2, darkgray);
+  margin-top: 10px;
+  padding-bottom: 500px;
 }
 
 .profContainer {
