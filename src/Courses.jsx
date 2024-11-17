@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import oasisbg from "/oasisbg.png"
-import MeetingTimesFormatter from '../meetingTimes.jsx'
+import MeetingTimesFormatter from './meetingTimes.jsx'
 
 function Courses() {
   const location = useLocation();
@@ -20,7 +20,7 @@ function Courses() {
       <h1 className="profName">Professor: {data[2]}</h1>
       <h2 className="profEmail">Email: {data[3]}</h2>
       <h2 className="linkedIn">LinkedIn: LinkedIn</h2>
-      <h2 chassName="rateMy">Rating: RateMyProfessor</h2>
+      <h2 className="rateMy">Rate My Professor Rating: {data[11]}</h2>
       <h1 className="location">Classroom: {data[1]}</h1>
       <h2 className="meetingTimes"><MeetingTimesFormatter meetingTimes={data[8]} /></h2>
       <h2 className="classMap"> Classroom Map</h2>
@@ -31,3 +31,4 @@ function Courses() {
 }
 
 export default Courses;
+
