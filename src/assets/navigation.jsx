@@ -19,7 +19,6 @@ const Navigation = () => {
     <div>
     <Link to="/"> Home </Link>
     <Link to="/Contact">Contact </Link>
-    <Link to="/Courses">Courses </Link>
   </div>
   );
 }

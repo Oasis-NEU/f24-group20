@@ -4,6 +4,7 @@ import './App.css';
 import Navigation from './assets/navigation'; 
 import ClassesParser from './parser';
 import { lookupCourseInfo } from './parser-func';
+import oasisbg from "/oasisbg.png";
 
 
 function App() {
@@ -14,7 +15,6 @@ function App() {
   const handleGoClick = () => {
     if (lookupCourseInfo(crn)) {
       navigate(`/Courses`, {state: lookupCourseInfo(crn)});
-      //<Link to={{pathname: `/Courses`, state: lookupCourseInfo(crn)}}>ohhh</Link>
     } else {
       alert('Please enter a valid CRN number.');
     }
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <div className="title">
-        <h1 id="title">PlaNUr</h1>
+      <img src={oasisbg} alt="plaNUr Image"/>  
       </div>
       <div className="textBody">
         <h2>
