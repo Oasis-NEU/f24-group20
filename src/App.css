@@ -3,6 +3,18 @@
   position: relative;
 }
 
+.meetingTimes {
+  display: flex;
+  flex-direction : row;
+  justify-content: center;
+}
+
+p {
+  background-color: black;
+  color: white; 
+  margin: 10px;
+  padding: 10px;
+}
 
 body {
   background-color: white;
