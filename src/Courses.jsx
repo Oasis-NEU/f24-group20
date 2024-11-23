@@ -27,8 +27,7 @@ function Courses() {
       <img src={oasisbg} alt="plaNUr Image"/>  
       </div>
       </Link>
-      <h2>Course Information</h2>
-      <p>Welcome to the course page for CRN: {data[0]}</p>
+      <h2 className="welcome">Course Information for CRN: {data[0]}</h2>
       <div className="infoContainer">
         <div className="classInfo">
           <h1 className="className">{data[5]} {data[6]}</h1>

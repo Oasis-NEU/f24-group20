@@ -26,7 +26,7 @@ body {
 }
 
 .classInfo {
-  margin-top: 50px;
+  margin-top: 0px;
   background-color: #d3d3d3;;
   font-family: 'Quicksand', sans-serif;
   padding: 70px;
@@ -121,4 +121,8 @@ body {
 
 .location {
   font-size: 32px;
+}
+
+.welcome {
+  font-family: 'Quicksand', sans-serif;
 }
