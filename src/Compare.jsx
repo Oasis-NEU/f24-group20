@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import oasisbg from "/oasisbg.png"
 import Navigation from './assets/navigation';
 import MeetingTimesFormatter from './meetingTimes.jsx'
+import WordToMap from './MapMaker';
 
 const Compare = () => {
     const location = useLocation();
