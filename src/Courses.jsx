@@ -5,6 +5,7 @@ import oasisbg from "/oasisbg.png";
 import MeetingTimesFormatter from './meetingTimes.jsx';
 import ClassesParser from './parser';
 import { lookupCourseInfo } from './parser-func';
+import WordToMap from './MapMaker';
 
 function Courses() {
   const location = useLocation();
@@ -47,9 +48,7 @@ function Courses() {
                             <p className={data[8].some(meeting => meeting.day === '5') ? "yesmeets" : "nomeets"}>F</p>
                         </div>
                         <h3 className={data[10]/data[9] > 0.75 ? "availGood" : data[10]/data[9] >= 0.25 ? "availMid" : "availBad"}>Availability: {data[10]} Remaining / {data[9]} Total</h3>
-          <div className="mapFormat">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24207.383434676187!2d-71.12799802568361!3d42.33990399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a1999cf5ce1%3A0xc97b00e66522b98c!2sNortheastern%20University!5e1!3m2!1sen!2sus!4v1731866750161!5m2!1sen!2sus" width="400" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+          <WordToMap word={data[1].split(' ')[0]}></WordToMap>
           <h2 className="classPic"> Classroom Picture</h2>
         </div>
       </div>

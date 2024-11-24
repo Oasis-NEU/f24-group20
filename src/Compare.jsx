@@ -39,9 +39,7 @@ const Compare = () => {
                             <p className={data1[8].some(meeting => meeting.day === '5') ? "yesmeets" : "nomeets"}>F</p>
                         </div>
                         <h3 className={data1[10]/data1[9] > 0.75 ? "availGood" : data1[10]/data1[9] >= 0.25 ? "availMid" : "availBad"}>Availability: {data1[10]} Remaining / {data1[9]} Total</h3>
-                        <div className="mapFormat">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24207.383434676187!2d-71.12799802568361!3d42.33990399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a1999cf5ce1%3A0xc97b00e66522b98c!2sNortheastern%20University!5e1!3m2!1sen!2sus!4v1731866750161!5m2!1sen!2sus" width="400" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                        <WordToMap word={data1[1].split(' ')[0]}></WordToMap>
                         <h2 className="classPic"> Classroom Picture</h2>
                     </div>
                     <div className="classInfo">
@@ -61,9 +59,7 @@ const Compare = () => {
                             <p className={data2[8].some(meeting => meeting.day === '5') ? "yesmeets" : "nomeets"}>F</p>
                         </div>
                         <h3 className={data2[10]/data2[9] > 0.75 ? "availGood" : data2[10]/data2[9] >= 0.25 ? "availMid" : "availBad"}>Availability: {data2[10]} Remaining / {data2[9]} Total</h3>
-                        <div className="mapFormat">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24207.383434676187!2d-71.12799802568361!3d42.33990399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a1999cf5ce1%3A0xc97b00e66522b98c!2sNortheastern%20University!5e1!3m2!1sen!2sus!4v1731866750161!5m2!1sen!2sus" width="400" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                        <WordToMap word={data2[1].split(' ')[0]}></WordToMap>
                         <h2 className="classPic2"> Classroom Picture 2</h2>
                     </div>
                 </div>
