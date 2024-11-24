@@ -37,7 +37,6 @@ function Courses() {
           </div>
           <h2 className="profEmail">Email: {data[3]}</h2>
           <h2 chassName="className">Rating: {data[11]}</h2>
-          <h2 chassName="meetingTimes">Meeting Time: </h2>
           <h1 className="location">Room: <br></br>{data[1]}</h1>
           <MeetingTimesFormatter meetingTimes={data[8]}></MeetingTimesFormatter>
                         <div className="meetingTimes">
@@ -49,7 +48,6 @@ function Courses() {
                         </div>
                         <h3 className={data[10]/data[9] > 0.75 ? "availGood" : data[10]/data[9] >= 0.25 ? "availMid" : "availBad"}>Availability: {data[10]} Remaining / {data[9]} Total</h3>
           <WordToMap word={data[1].split(' ')[0]}></WordToMap>
-          <h2 className="classPic"> Classroom Picture</h2>
         </div>
       </div>
       <input

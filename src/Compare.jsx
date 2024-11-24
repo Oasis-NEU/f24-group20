@@ -41,7 +41,6 @@ const Compare = () => {
                         </div>
                         <h3 className={data1[10]/data1[9] > 0.75 ? "availGood" : data1[10]/data1[9] >= 0.25 ? "availMid" : "availBad"}>Availability: {data1[10]} Remaining / {data1[9]} Total</h3>
                         <WordToMap word={data1[1].split(' ')[0]}></WordToMap>
-                        <h2 className="classPic"> Classroom Picture</h2>
                     </div>
                     <div className="classInfo">
                     <h1 className="className">{data2[5]} {data2[6]}</h1>
@@ -61,7 +60,6 @@ const Compare = () => {
                         </div>
                         <h3 className={data2[10]/data2[9] > 0.75 ? "availGood" : data2[10]/data2[9] >= 0.25 ? "availMid" : "availBad"}>Availability: {data2[10]} Remaining / {data2[9]} Total</h3>
                         <WordToMap word={data2[1].split(' ')[0]}></WordToMap>
-                        <h2 className="classPic2"> Classroom Picture 2</h2>
                     </div>
                 </div>
             </>
