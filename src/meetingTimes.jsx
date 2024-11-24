@@ -1,4 +1,3 @@
-// MeetingTimesFormatter.jsx
 import React from 'react';
 
 const formatTime = (time) => {
@@ -14,33 +13,49 @@ const formatTime = (time) => {
 
 const MeetingTimesFormatter = ({ meetingTimes }) => {
     const daysOfWeek = {
-        '1': 'Monday',
-        '2': 'Tuesday',
-        '3': 'Wednesday',
-        '4': 'Thursday',
-        '5': 'Friday'
+        '1': 'M',  // Monday
+        '2': 'T',  // Tuesday
+        '3': 'W',  // Wednesday
+        '4': 'R',  // Thursday
+        '5': 'F'   // Friday
     };
 
-    const formattedTimes = [];
+    // Group the meeting times by start and end time
+    const groupedTimes = meetingTimes.reduce((acc, { day, start, end }) => {
+        const timeRange = `${formatTime(start)} - ${formatTime(end)}`;
+        const dayCode = daysOfWeek[day];
 
-    for (let i = 0; i < meetingTimes.length; i++) {
-        const { day, start, end } = meetingTimes[i];
-        const dayName = daysOfWeek[day];
-        const formattedStart = formatTime(start);
-        const formattedEnd = formatTime(end);
-        formattedTimes.push(`${dayName}: ${formattedStart} - ${formattedEnd}`);
+        if (acc[timeRange]) {
+            acc[timeRange].push(dayCode);
+        } else {
+            acc[timeRange] = [dayCode];
+        }
+
+        return acc;
+    }, {});
+
+    const timeRanges = Object.entries(groupedTimes);
+
+    // Check if all days with times have the same time range
+    if (timeRanges.length === 1) {
+        // If there's only one time range for all days that have times
+        return (
+            <div>
+                <h2>Meeting Times: </h2>
+                {timeRanges[0][0]} {/* Output the single time range */}
+            </div>
+        );
     }
+
+    // Format the output string when there are multiple time ranges
+    const formattedTimes = timeRanges.map(([timeRange, days]) => {
+        return `${days.join(', ')}: ${timeRange}`;
+    });
 
     return (
         <div>
-            <h2>Meeting Times: </h2>
-            {formattedTimes.length > 0 ? (
-                formattedTimes.map((time, index) => (
-                    <span key={index}>
-                        {time}
-                        {index < formattedTimes.length - 1 && <> , <br /></>} 
-                    </span>
-                ))) : ('No meeting times available.' )}
+            <h2 className="meetingTime">Meeting Times: </h2>
+            {formattedTimes.join(', ')} {/* Join all the formatted times with commas */}
         </div>
     );
 };

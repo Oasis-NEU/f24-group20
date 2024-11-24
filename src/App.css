@@ -34,7 +34,7 @@ body {
   /*background-image: linear-gradient(180deg, #e2e2e2, darkgray);*/
   background-color: white;
   margin-top: 10px;
-  padding-bottom: 500px;
+  padding-bottom: 5px;
 }
 
 .classInfo {
@@ -82,7 +82,7 @@ body {
   text-align: center;
   place-items: center;
   font-size: 30px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-width: 5px;
   border-color: black;
   background-color: white;
@@ -90,13 +90,14 @@ body {
 }
 
 #goButton{
-  background-color: #d3d3d3;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
-  color: red;
+  background-color: red;
   border-radius: 10px;
   margin: 10px;
   border-color: black;
+  font-size: x-large;
+  font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -136,5 +137,43 @@ body {
 }
 
 .welcome {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.yesmeets {
+  background-color: green;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.nomeets {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.meetingTime {
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+.availGood {
+  color: green;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.availMid {
+  color: orange;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.availBad {
+  color: red;
   font-family: 'Quicksand', sans-serif;
 }
