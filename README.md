@@ -1,6 +1,8 @@
 # PlaNUr 📅
 
-PlaNUr is a front-end web app that streamlines and presents all the information Northeastern University students need to construct their future schedules or switch classes in their current schedules. We retrieve data from Sandbox's Banner API and present it in interesting and useful ways based on the inquired course CRNs. This project was created as part of the F24 cohort of Oasis NEU and was each of the members in our group’s first-ever web development experience.
+PlaNUr is a front-end web app that streamlines and presents all the information Northeastern University students need to construct their future schedules or switch classes in their current schedules. We retrieve data from Sandbox's Banner API and present it in interesting and useful ways based on the inquired course CRNs.
+<br><br>
+This project was created as part of the F24 cohort of Oasis NEU and was each of the members in our group’s first-ever web development experience.
 
 While the app is not deployed, here are some screenshots of its functionality!
 
